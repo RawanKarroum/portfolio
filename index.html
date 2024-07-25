@@ -8,6 +8,7 @@
     <title>Rawan Karroum</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
@@ -16,7 +17,7 @@
             <ul>
                 <li><a href="#">About Me</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#">Projects</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
@@ -40,69 +41,65 @@
         <div class="skills-title">
             SKILLS
         </div>
-        <div class="skills-grid">
-            <div class="skill-item">
-                <i class="fab fa-js-square"></i>
-                <p>JavaScript</p>
-            </div>
-            <div class="skill-item">
-                <i class="fab fa-html5"></i>
-                <p>HTML</p>
-            </div>
-            <div class="skill-item">
-                <i class="fab fa-css3-alt"></i>
-                <p>CSS</p>
-            </div>
-            <div class="skill-item">
-                <i class="fab fa-react"></i>
-                <p>React.js</p>
-            </div>
-        </div>
-        <div class="skills-grid">
-            <div class="skill-item">
-                <i class="fab fa-node"></i>
-                <p>Node.js</p>
-            </div>
-            <div class="skill-item">
-                <i class="fas fa-database"></i>
-                <p>SQL</p>
-            </div>
-            <div class="skill-item">
-                <i class="fab fa-git-alt"></i>
-                <p>Git</p>
-            </div>
-            <div class="skill-item">
-                <i class="fas fa-server"></i>
-                <p>Express.js</p>
-            </div>
-        </div>
-        <div class="skills-grid">
-            <div class="skill-item">
-                <i class="fab fa-java"></i>
-                <p>Java</p>
-            </div>
-            <div class="skill-item">
-                <i class="fab fa-python"></i>
-                <p>Python</p>
-            </div>
-            <div class="skill-item">
-                <i class="fas fa-database"></i>
-                <p>MongoDB</p>
-            </div>
-            <div class="skill-item">
-                <i class="fas fa-code"></i>
-                <p>Typescript</p>
-            </div>
-        </div>
-            <div class="skill-item">
-                <i class="fas fa-database"></i>
-                <p>MySQL</p>
-            </div>
+        <div class="skills-diamond">
+            <div class="skill-item"><i class="bx bxl-javascript"></i>JavaScript</div>
+            <div class="skill-item"><i class="bx bxl-html5"></i>HTML</div>
+            <div class="skill-item"><i class="bx bxl-css3"></i>CSS</div>
+            <div class="skill-item"><i class="bx bxl-react"></i>React.js</div>
+            <div class="skill-item"><i class="bx bxl-nodejs"></i>Node.js</div>
+            <div class="skill-item"><i class="bx bx-data"></i>SQL</div>
+            <div class="skill-item"><i class="bx bxl-nodejs"></i>Express.js</div>
+            <div class="skill-item"><i class="bx bxl-java"></i>Java</div>
+            <div class="skill-item"><i class="bx bxl-python"></i>Python</div>
+            <div class="skill-item"><i class="bx bxl-mongodb"></i>MongoDB</div>
+            <div class="skill-item"><i class="bx bxl-typescript"></i>Typescript</div>
+            <div class="skill-item"><i class="bx bxs-data"></i>MySQL</div>
         </div>
     </div>
-
+    <div id="projects" class="projects">
+        <div class="projects-title">PROJECTS</div>
+        <div class="projects-container">
+            <div class="project-item" style="background-image: url('./assets/shiftScheduler.png');">
+                <div class="project-content">
+                    <h2 class="project-title">Project Title 1</h2>
+                    <div class="project-tech-stack">Typescript | Java | Bla Bla</div>
+                    <p class="project-description">This is a description of the project 1.</p>
+                    <a href="https://example.com" class="project-link">Github</a>
+                </div>
+            </div>
+            <div class="project-item" style="background-image: url('./assets/shiftmaster.png');">
+                <div class="project-content">
+                    <h2 class="project-title-black">Project Title 2</h2>
+                    <div class="project-tech-stack-black">Typescript | Java | Bla Bla</div>
+                    <p class="project-description-black">This is a description of the project 2.</p>
+                    <a href="https://example.com" class="project-link">Github</a>
+                </div>
+            </div>
+            <div class="project-item" style="background-image: url('./assets/shapeshyft.png');">
+                <div class="project-content">
+                    <h2 class="project-title-white">Project Title 3</h2>
+                    <div class="project-tech-stack-white">Typescript | Java | Bla Bla</div>
+                    <p class="project-description-white">This is a description of the project 3.</p>
+                    <a href="https://example.com" class="project-link">Github</a>
+                </div>
+            </div>
+            <div class="project-item" style="background-image: url('./assets/shiftmaster.png');">
+                <div class="project-content">
+                    <h2 class="project-title-black">Project Title 4</h2>
+                    <div class="project-tech-stack-black">Typescript | Java | Bla Bla</div>
+                    <p class="project-description-black">This is a description of the project 4.</p>
+                    <a href="https://example.com" class="project-link">Github</a>
+                </div>
+            </div>
+            <button id="next">></button>
+            <button id="prev"><</button>
+        </div>
+    </div>
+           
+    
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="logic.js"></script>
+    <script src="app.js"></script>
     <script>
         document.querySelector('.arrow').addEventListener('click', function(event) {
             event.preventDefault();
