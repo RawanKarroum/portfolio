@@ -547,19 +547,44 @@ body {
 }
 
 .contact-icons {
+    display: flex;
+    justify-content: center;
     margin-top: 20px;
 }
 
-.contact-icons .icon-link {
-    font-size: 3em;
+.icon-link {
+    position: relative;
+    display: inline-block;
     margin: 0 15px;
+    font-size: 2.5em;
     color: #D9C2EA;
-    transition: color 0.2s, text-shadow 0.2s;
+    transition: color 0.3s;
+    cursor: pointer;
 }
 
-.contact-icons .icon-link:hover {
-    color: #b895d1;
-    text-shadow: none; 
+.icon-link:hover {
+    color: #A08EBF; 
+}
+
+.icon-link::after {
+    content: attr(title);
+    position: absolute;
+    bottom: -35px; 
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+    z-index: 10; 
+}
+
+.icon-link:hover::after {
+    opacity: 1;
 }
 
 @media (max-width: 768px) {
