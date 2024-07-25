@@ -471,6 +471,97 @@ body {
     line-height: 1.6; 
 }
 
+.contact-section {
+    text-align: center;
+    padding: 50px;
+    background-color: #fff; 
+    color: #333;
+}
+
+.contact-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.contact-email {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-email a {
+    color: #333; 
+    text-decoration: none; 
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.contact-email i {
+    margin-right: 8px; 
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+    text-align: left;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1.2em;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid #D9C2EA;
+    border-radius: 5px;
+    background-color: #f9f9f9; 
+    color: #333;
+}
+
+.contact-form button {
+    display: block;
+    width: 100px; 
+    padding: 12px;
+    font-size: 1.2em;
+    color: white;
+    background-color: #D9C2EA;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.contact-form button:hover {
+    background-color: #b895d1;
+}
+
+.contact-icons {
+    margin-top: 20px;
+}
+
+.contact-icons .icon-link {
+    font-size: 3em;
+    margin: 0 15px;
+    color: #D9C2EA;
+    transition: color 0.2s, text-shadow 0.2s;
+}
+
+.contact-icons .icon-link:hover {
+    color: #b895d1;
+    text-shadow: none; 
+}
+
 @media (max-width: 768px) {
     .about-me {
         height: auto;
@@ -551,6 +642,34 @@ body {
     #next, #prev {
         font-size: large;
         top: 30%;
+    }
+    .contact-section {
+        padding: 20px;
+    }
+
+    .contact-form {
+        text-align: center; 
+    }
+
+    .contact-form button {
+        width: 150px; 
+        margin: 20px auto; 
+    }
+
+    .contact-icons .icon-link {
+        font-size: 2.5em;
+        margin: 0 10px;
+    }
+
+    .contact-email {
+        font-size: 1em; 
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .contact-email i {
+        margin-left: 0; 
+        margin-top: 5px; 
     }
 }
 
