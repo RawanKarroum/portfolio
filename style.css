@@ -473,18 +473,84 @@ body {
 
 @media (max-width: 768px) {
     .about-me {
-        height: auto; 
+        height: auto;
+        padding: 20px 0;
     }
     .profile-picture {
-        width: 300px; 
+        width: 300px;
         height: 300px;
         position: static;
         transform: none;
-        margin: 0 auto 20px; /
+        margin: 0 auto 20px;
     }
     .about-me-text {
         margin-left: 0;
         max-width: 100%;
+        text-align: center;
+    }
+    .multiple-text {
+        font-size: 50px;
+    }
+    .name {
+        font-size: 30px;
+    }
+    .city {
+        font-size: 20px;
+    }
+    .arrow {
+        font-size: 24px;
+    }
+    .skills-title {
+        font-size: 1.5em;
+    }
+    .skills-diamond {
+        width: 100%;
+        max-width: 300px;
+        margin-top: 20px;
+    }
+    .skill-item {
+        width: 60px;
+        height: 60px;
+        font-size: 14px;
+        padding: 10px;
+        position: static;
+        margin: 10px;
+        opacity: 1;
+    }
+    .skill-item i {
+        font-size: 25px;
+        margin-bottom: 5px;
+    }
+    .projects-title {
+        font-size: 1.5em;
+    }
+    .project-item {
+        width: 200px;
+        height: 265px;
+        left: calc(50% - 100px);
+    }
+    .project-content {
+        padding: 10px;
+    }
+    .project-title-black,
+    .project-title-white {
+        font-size: 1em;
+    }
+    .project-tech-stack-black,
+    .project-tech-stack-white {
+        font-size: 0.6em;
+    }
+    .project-description-black,
+    .project-description-white {
+        font-size: 0.75em;
+    }
+    .project-link {
+        padding: 5px 10px;
+        font-size: 0.75em;
+    }
+    #next, #prev {
+        font-size: large;
+        top: 30%;
     }
 }
 
