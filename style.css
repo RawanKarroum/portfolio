@@ -422,6 +422,72 @@ body {
     right: 50px;
 }
 
+.wave-image-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.wave-image {
+    width: 100%;
+    display: block;
+}
+
+.about-me {
+    background-color: #D9C2EA;
+    position: relative;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.about-me-content {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    position: relative;
+    justify-content: space-between; 
+}
+
+.profile-picture {
+    width: 800px; 
+    height: 800px; 
+    border-radius: 50%;
+    position: absolute;
+    left: -200px; 
+    top: 50%; 
+    transform: translateY(-50%);
+}
+
+.about-me-text {
+    font-size: 1.5em; 
+    color: #333;
+    text-align: left; 
+    margin-left: 550px; 
+    line-height: 1.6; 
+}
+
+@media (max-width: 768px) {
+    .about-me {
+        height: auto; 
+    }
+    .profile-picture {
+        width: 300px; 
+        height: 300px;
+        position: static;
+        transform: none;
+        margin: 0 auto 20px; /
+    }
+    .about-me-text {
+        margin-left: 0;
+        max-width: 100%;
+    }
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
