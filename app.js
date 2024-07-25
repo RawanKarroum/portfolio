@@ -1,36 +1,29 @@
-let items = document.querySelectorAll('.projects-container .project-item');
+document.addEventListener('DOMContentLoaded', function () {
+    let items = document.querySelectorAll('.projects-container .project-item');
     let next = document.getElementById('next');
     let prev = document.getElementById('prev');
-    
-    let active = 3;
-    function loadShow(){
+
+    let active = 0;
+
+    function loadShow() {
         let stt = 0;
-        items[active].style.transform = `none`;
-        items[active].style.zIndex = 1;
-        items[active].style.filter = 'none';
-        items[active].style.opacity = 1;
-        for(var i = active + 1; i < items.length; i++){
-            stt++;
-            items[i].style.transform = `translateX(${120*stt}px) scale(${1 - 0.2*stt}) perspective(16px) rotateY(-1deg)`;
-            items[i].style.zIndex = -stt;
-            items[i].style.filter = 'blur(5px)';
-            items[i].style.opacity = stt > 2 ? 0 : 0.6;
-        }
-        stt = 0;
-        for(var i = active - 1; i >= 0; i--){
-            stt++;
-            items[i].style.transform = `translateX(${-120*stt}px) scale(${1 - 0.2*stt}) perspective(16px) rotateY(1deg)`;
-            items[i].style.zIndex = -stt;
-            items[i].style.filter = 'blur(5px)';
-            items[i].style.opacity = stt > 2 ? 0 : 0.6;
-        }
+        items.forEach((item, index) => {
+            item.style.transform = `translateX(${(index - active) * 120}px) scale(${index === active ? 1 : 0.8}) perspective(16px) rotateY(${index === active ? 0 : index < active ? 1 : -1}deg)`;
+            item.style.zIndex = index === active ? 1 : -Math.abs(index - active);
+            item.style.filter = index === active ? 'none' : 'blur(5px)';
+            item.style.opacity = Math.abs(index - active) > 2 ? 0 : (index === active ? 1 : 0.6);
+        });
     }
+
     loadShow();
-    next.onclick = function(){
-        active = active + 1 < items.length ? active + 1 : active;
+
+    next.onclick = function () {
+        active = (active + 1) % items.length;
         loadShow();
     }
-    prev.onclick = function(){
-        active = active - 1 >= 0 ? active - 1 : active;
+
+    prev.onclick = function () {
+        active = (active - 1 + items.length) % items.length;
         loadShow();
     }
+});
