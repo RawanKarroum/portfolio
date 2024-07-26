@@ -587,6 +587,28 @@ body {
     opacity: 1;
 }
 
+.notification {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    z-index: 1000;
+    font-size: 1.2em;
+}
+
+.notification.success {
+    background-color: #4caf50;
+    color: white;
+}
+
+.notification.failure {
+    background-color: #f44336;
+    color: white;
+}
+
 @media (max-width: 768px) {
     .about-me {
         height: auto;
