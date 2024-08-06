@@ -610,42 +610,63 @@ body {
 }
 
 @media (max-width: 768px) {
-    .about-me {
+    .header {
         height: auto;
-        padding: 20px 0;
-    }
-    .profile-picture {
-        width: 300px;
-        height: 300px;
-        position: static;
-        transform: none;
-        margin: 0 auto 20px;
-    }
-    .about-me-text {
-        margin-left: 0;
-        max-width: 100%;
+        padding-left: 20px;
+        align-items: center;
         text-align: center;
     }
-    .multiple-text {
-        font-size: 50px;
+
+    .navbar {
+        justify-content: center;
+        padding: 10px;
     }
+
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .navbar a {
+        font-size: 16px;
+        margin-right: 0;
+        margin-top: 5px;
+    }
+
+    .introduction {
+        padding-left: 0;
+    }
+
     .name {
         font-size: 30px;
     }
+
+    .multiple-text {
+        font-size: 40px;
+    }
+
     .city {
         font-size: 20px;
     }
+
     .arrow {
         font-size: 24px;
     }
+
     .skills-title {
         font-size: 1.5em;
     }
+
     .skills-diamond {
         width: 100%;
         max-width: 300px;
         margin-top: 20px;
     }
+
     .skill-item {
         width: 60px;
         height: 60px;
@@ -655,52 +676,62 @@ body {
         margin: 10px;
         opacity: 1;
     }
+
     .skill-item i {
         font-size: 25px;
         margin-bottom: 5px;
     }
+
     .projects-title {
         font-size: 1.5em;
     }
+
     .project-item {
         width: 200px;
         height: 265px;
         left: calc(50% - 100px);
     }
+
     .project-content {
         padding: 10px;
     }
+
     .project-title-black,
     .project-title-white {
         font-size: 1em;
     }
+
     .project-tech-stack-black,
     .project-tech-stack-white {
         font-size: 0.6em;
     }
+
     .project-description-black,
     .project-description-white {
         font-size: 0.75em;
     }
+
     .project-link {
         padding: 5px 10px;
         font-size: 0.75em;
     }
+
     #next, #prev {
         font-size: large;
         top: 30%;
     }
+
     .contact-section {
         padding: 20px;
     }
 
     .contact-form {
-        text-align: center; 
+        text-align: center;
     }
 
     .contact-form button {
-        width: 150px; 
-        margin: 20px auto; 
+        width: 150px;
+        margin: 20px auto;
     }
 
     .contact-icons .icon-link {
@@ -709,16 +740,17 @@ body {
     }
 
     .contact-email {
-        font-size: 1em; 
-        flex-direction: column; 
+        font-size: 1em;
+        flex-direction: column;
         align-items: center;
     }
 
     .contact-email i {
-        margin-left: 0; 
-        margin-top: 5px; 
+        margin-left: 0;
+        margin-top: 5px;
     }
 }
+
 
 @keyframes fadeIn {
     from {
