@@ -611,10 +611,12 @@ body {
 
 @media (max-width: 768px) {
     .header {
-        height: auto;
+        height: 100vh; 
         padding-left: 20px;
         align-items: center;
         text-align: center;
+        width: 100vw; 
+        overflow: hidden;
     }
 
     .navbar {
