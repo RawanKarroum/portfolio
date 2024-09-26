@@ -1,11 +1,15 @@
 html {
     scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 body {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
 }
 
 .header {
@@ -19,6 +23,7 @@ body {
     position: relative; 
     padding-left: 100px;
     box-sizing: border-box;
+    width: 100vw;
 }
 
 .navbar {
@@ -617,15 +622,19 @@ body {
         text-align: center;
         width: 100vw; 
         overflow: hidden;
+        padding-right: 20px;
     }
 
     .navbar {
         justify-content: center;
         padding: 10px;
+        flex-wrap: wrap; 
     }
 
     .navbar ul {
         flex-direction: column;
+        width: 100%; 
+        align-items: center;
     }
 
     .navbar li {
@@ -634,7 +643,7 @@ body {
     }
 
     .navbar a {
-        font-size: 16px;
+        font-size: 18px; 
         margin-right: 0;
         margin-top: 5px;
     }
